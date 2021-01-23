@@ -4,6 +4,7 @@ import pandas as pd
 from numpy import genfromtxt
 import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
+import math 
 
 '''
 reads lat and lon csv files and creates a 3D array 
@@ -125,3 +126,11 @@ def interpolate_coordinate(x, y, grid):
     lon_interpolated = lon_0 + (lon_1 - lon_0)*(y - j)  
 
     return lat_interpolated, lon_interpolated
+
+def caonvert_vel_vector(u,v):
+    mag = math.sqrt(u**2 + v**2)
+    dir = math.atan2(v, u)
+    if dir < 0:
+        dir += 2*3.1416
+    
+    return mag, dir
