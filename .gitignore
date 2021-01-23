@@ -130,3 +130,9 @@ dmypy.json
 
 # locks
 data/.~lock*
+
+# large files
+*DRIFT*
+
+#vscode
+.vscode/

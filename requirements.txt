@@ -3,4 +3,9 @@
 numpy
 matplotlib
 pandas
+scikit-learn
+scipy
+seaborn
+chart_studio
+nbformat
 https://github.com/matplotlib/basemap/archive/master.zip
