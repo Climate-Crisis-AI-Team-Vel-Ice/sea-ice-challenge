@@ -133,6 +133,7 @@ data/.~lock*
 
 # large files
 *DRIFT*
+converted.csv
 
 #vscode
 .vscode/
