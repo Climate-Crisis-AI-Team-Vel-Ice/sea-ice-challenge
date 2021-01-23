@@ -54,7 +54,7 @@ in the following:
 
 -> map(lat,lon) returns an x,y position on the map
 '''
-def draw_map(pos_x, pos_y, grid, fig, projection='cyl', 
+def draw_map(lat, lon, grid, fig, projection='cyl', 
             center=(90,0), show_grid=True, grid_res=10, 
             width=4e6, height=3e6):
 
@@ -84,6 +84,7 @@ def draw_map(pos_x, pos_y, grid, fig, projection='cyl',
         m = Basemap(projection='stere', resolution=None,
                     lon_0=0, lat_0=90, 
                     width=width, height=height)
+          
         # m.etopo(scale=0.5, alpha=0.5)    
         m.bluemarble(scale=0.5)
 
@@ -106,7 +107,8 @@ def draw_map(pos_x, pos_y, grid, fig, projection='cyl',
         plt.plot(x_coords, y_coords, 'or', markersize=1)
 
     # show the main data on the map
-    plt.plot(pos_x, pos_y, c=np.random.rand(3,), markersize=2)
+    x, y = m(lon, lat)
+    plt.plot(x, y, c=np.random.rand(3,), markersize=3, linewidth=5.0)
 
 '''
 interpolates the latitude and longitude of a buoy from its cartesian coordinates (x_EASE, y_EASE) on the EASE grid
@@ -123,4 +125,3 @@ def interpolate_coordinate(x, y, grid):
     lon_interpolated = lon_0 + (lon_1 - lon_0)*(y - j)  
 
     return lat_interpolated, lon_interpolated
-    
