@@ -1,0 +1,6 @@
+# python 3.8.5
+# sudo apt-get install libgeos-dev
+numpy
+matplotlib
+pandas
+https://github.com/matplotlib/basemap/archive/master.zip
