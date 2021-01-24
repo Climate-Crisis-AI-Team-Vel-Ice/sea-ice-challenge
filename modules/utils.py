@@ -108,8 +108,9 @@ def draw_map(lat, lon, grid, fig, projection='cyl',
         plt.plot(x_coords, y_coords, 'or', markersize=1)
 
     # show the main data on the map
-    x, y = m(lon, lat)
-    plt.plot(x, y, c=np.random.rand(3,), markersize=3, linewidth=5.0)
+    if lat != [] and lon != []:
+        x, y = m(lon, lat)
+        plt.plot(x, y, c=np.random.rand(3,), markersize=3, linewidth=5.0)
 
 '''
 interpolates the latitude and longitude of a buoy from its cartesian coordinates (x_EASE, y_EASE) on the EASE grid
