@@ -33,3 +33,16 @@ Make sure you have python 3 installed as the default version of python then in a
 ```
 python -m pip install -r requirements.txt 
 ```
+
+## 2- Run the software
+### Data import, manipulation and plotting
+run sea_ice_data_plot.ipynb
+
+### Data correlation and PCA analysis
+run sea_ice_data_PCA_analysis.ipynb
+run sea_ice_data_visualization.ipynb
+
+### Training
+sea_ice_data_ML_Analysis.ipynb
+
+
