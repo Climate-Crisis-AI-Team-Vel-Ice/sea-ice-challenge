@@ -48,6 +48,6 @@ run sea_ice_data_PCA_analysis.ipynb
 run sea_ice_data_visualization.ipynb
 
 ### Training
-sea_ice_data_ML_Analysis.ipynb
+sea_ice_data_ML_XGB_RF.ipynb
 
 
