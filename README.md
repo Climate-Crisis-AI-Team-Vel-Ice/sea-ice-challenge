@@ -1,6 +1,9 @@
 # Sea Ice Challenge
 Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team <br />
-We used the XGBoost regressor for prediction <br />
+With Neural Networks
+Overall RMSE for velocity magnitude:  12.04 <br />
+
+With XGBoost regressor for prediction <br />
 Regression Score for XGB velocity direction:  0.50 <br />
 Regression Score for XGB velocity magnitude:  0.66 <br />
 this is equivalent to the following RSME: <br />
