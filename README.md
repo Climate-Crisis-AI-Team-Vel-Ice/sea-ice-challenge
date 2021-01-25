@@ -1,6 +1,10 @@
 # Sea Ice Challenge
 Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team
-
+Regression Score for XGB velocity direction  0.49115876375415923
+Regression Score for XGB velocity magnitude  0.6673522845530333
+this is equivalent to following RSME
+Overall RMSE for velocity magnitude:  0.0033688645664526683
+Overall RMSE for velocity direction:  0.039189775695919686
 ## 1- Installation
 ### Install the libgeos-dev library
 #### linux:
