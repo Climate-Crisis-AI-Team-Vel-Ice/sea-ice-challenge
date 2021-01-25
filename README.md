@@ -1,7 +1,12 @@
 # Sea Ice Challenge
 Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team <br />
+
+WWith Random Forests <br />
+Overall RMSE:  9.3 <br />
+Regression Score:  0.614 <br />
+
 With Neural Networks
-Overall RMSE for velocity magnitude:  12.04 <br />
+Overall RMSE:  12.04 <br />
 
 With XGBoost regressor for prediction <br />
 Regression Score for XGB velocity direction:  0.50 <br />
