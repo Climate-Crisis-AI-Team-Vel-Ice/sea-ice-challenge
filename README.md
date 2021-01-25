@@ -1,10 +1,11 @@
 # Sea Ice Challenge
-Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team
-Regression Score for XGB velocity direction  0.49115876375415923
-Regression Score for XGB velocity magnitude  0.6673522845530333
-this is equivalent to following RSME
-Overall RMSE for velocity magnitude:  0.0033688645664526683
-Overall RMSE for velocity direction:  0.039189775695919686
+Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team <br />
+
+Regression Score for XGB velocity direction  0.49115876375415923 <br />
+Regression Score for XGB velocity magnitude  0.6673522845530333 <br />
+this is equivalent t following RSME <br />
+Overall RMSE for velocity magnitude:  0.0033688645664526683 <br />
+Overall RMSE for velocity direction:  0.039189775695919686 <br />
 ## 1- Installation
 ### Install the libgeos-dev library
 #### linux:
@@ -20,8 +21,8 @@ brew install numpy
 brew install geos
 brew install proj
 ```
-2- Download Basemap source tar file (https://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/), untar it
-3- Add "export GEOS_DIR=/usr/local/Cellar/geos/3.5.0/" to a new line in .bash_profile, and then reload it via:
+2- Download Basemap source tar file (https://sourceforge.net/projects/matplotlib/files/matplotlib-toolkits/), untar it <br />
+3- Add "export GEOS_DIR=/usr/local/Cellar/geos/3.5.0/" to a new line in .bash_profile, and then reload it via: <br />
 ```
 source ~/.bash_profile
 ```
@@ -33,7 +34,7 @@ python setup.py install
 follow https://matplotlib.org/basemap/users/installing.html
 
 ### Python requirements
-Make sure you have python 3 installed as the default version of python then in a command window or terminal run:
+Make sure you have python 3 installed as the default version of python then in a command window or terminal run: <br />
 ```
 python -m pip install -r requirements.txt 
 ```
