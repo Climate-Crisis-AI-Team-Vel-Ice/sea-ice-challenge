@@ -51,6 +51,9 @@ run sea_ice_data_plot.ipynb
 run sea_ice_data_PCA_analysis.ipynb <br />
 run sea_ice_data_visualization.ipynb 
 
+To view the plots in the "data visualization" notebook, follow this link:https://nbviewer.jupyter.org/github/Climate-Crisis-AI-Team-Vel-Ice/sea-ice-challenge/blob/master/sea_ice_data_visualization.ipynb
+
+
 ### Training
 sea_ice_data_ML_XGB_RF.ipynb
 
