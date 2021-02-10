@@ -1,11 +1,15 @@
 # Sea Ice Challenge
 Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon developed by the great Vel Ice team <br />
 
-Regression Score for XGB velocity direction:  0.49115876375415923 <br />
-Regression Score for XGB velocity magnitude:  0.6673522845530333 <br />
-this is equivalent to the following RSME: <br />
-Overall RMSE for velocity magnitude:  0.0033688645664526683 <br />
-Overall RMSE for velocity direction:  0.039189775695919686 <br />
+With Random Forests <br />
+Overall RMSE:  2.6 <br />
+
+With Neural Networks
+Overall RMSE:  2.94 <br />
+
+With XGBoost <br />
+Overall RMSE for velocity magnitude:  4.24 <br />
+Overall RMSE for velocity direction:  1.21 <br />
 ## 1- Installation
 ### Install the libgeos-dev library
 #### linux:
@@ -46,6 +50,9 @@ run sea_ice_data_plot.ipynb
 ### Data correlation and PCA analysis
 run sea_ice_data_PCA_analysis.ipynb <br />
 run sea_ice_data_visualization.ipynb 
+
+To view the plots in the "data visualization" notebook, follow this link:https://nbviewer.jupyter.org/github/Climate-Crisis-AI-Team-Vel-Ice/sea-ice-challenge/blob/master/sea_ice_data_visualization.ipynb
+
 
 ### Training
 sea_ice_data_ML_XGB_RF.ipynb
