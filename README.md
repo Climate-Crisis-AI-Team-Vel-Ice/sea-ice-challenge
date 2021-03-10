@@ -4,7 +4,7 @@ Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon devel
 With Random Forests <br />
 Overall RMSE:  2.6 <br />
 
-With Neural Network
+With Neural Network  <br />
 Overall RMSE for velocity magnitude:  4.58 <br />
 Overall RMSE for velocity direction:  1.28 <br />
 
