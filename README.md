@@ -4,11 +4,12 @@ Kaggle & Data Visualisation challenge for Climate Crisis AI 2021 Hackathon devel
 With Random Forests <br />
 Overall RMSE:  2.6 <br />
 
-With Neural Networks
-Overall RMSE:  2.94 <br />
+With Neural Network
+Overall RMSE for velocity magnitude:  4.58 <br />
+Overall RMSE for velocity direction:  1.28 <br />
 
 With XGBoost <br />
-Overall RMSE for velocity magnitude:  4.24 <br />
+Overall RMSE for velocity magnitude:  4.27 <br />
 Overall RMSE for velocity direction:  1.21 <br />
 ## 1- Installation
 ### Install the libgeos-dev library
