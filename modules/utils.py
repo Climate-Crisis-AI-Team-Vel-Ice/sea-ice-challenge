@@ -9,6 +9,7 @@ from matplotlib.colors import from_levels_and_colors
 import math 
 import calendar
 
+
 '''
 reads lat and lon csv files and creates a 3D array 
 '''
@@ -220,7 +221,38 @@ converts u and v components of velocity to magnitude and direction
 def caonvert_vel_vector(u,v):
     mag = math.sqrt(u**2 + v**2)
     dir = math.atan2(v, u)
-    if dir < 0:
-        dir += 2*3.1416
+    # if dir < 0:
+    #     dir += 2*3.1416
     
     return mag, dir
+
+def relative_buoy_wind_vector(wu, wv, bu, bv):
+    # buoy with respect to wind
+    sub = [bu-wu, bv-wv]
+    wmag = math.sqrt(wu**2 + wv**2)
+    bmag = math.sqrt(bu**2 + bv**2)
+    # rel_mag = math.sqrt(sub[0]**2 + sub[1]**2)
+    rel_mag = bmag - wmag
+
+    # angle of buoy velocity vector with +x
+    dir_buoy = math.atan2(bv, bu)
+
+    # angle of wind velocity vector with +x 
+    dir_wind = math.atan2(wv, wu)
+
+    # direction of buoy w/r to wind
+    rel_dir = dir_buoy - dir_wind
+
+    if rel_dir > math.pi:
+        rel_dir = 2*math.pi - rel_dir 
+
+    elif rel_dir < -math.pi:
+        rel_dir = - (2*math.pi + rel_dir)
+    # if wmag != 0 and bmag != 0:
+    #     cos_theta = (wu*bu+wv*bv) / (wmag*bmag)
+    # else:
+    #     return rel_mag, 0
+
+    # rel_dir = math.acos(cos_theta) 
+
+    return rel_mag, rel_dir
